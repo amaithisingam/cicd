@@ -13,14 +13,14 @@ export default Blits.Component('Home', {
       <Element :y.transition="$y">
         <Element
           src="assets/logo.png"
-          w="200"
+          w="300"
           h="200"
           :scale.transition="{value: $scale, duration: 500}"
           :rotation.transition="{value: $rotation, duration: 800}"
           :x.transition="{value: $x, delay: 200, duration: 1200, easing: 'cubic-bezier(1,-0.64,.39,1.44)'}"
           mount="{x: 0.5}"
           y="320"
-         rounded="8"
+          rounded="8"
         />
         <Loader :x="1920 / 2" mount="{x: 0.5}" y="600" w="160" :alpha.transition="$loaderAlpha" :loaderColor="$color" />
         <Element y="600" :alpha.transition="$textAlpha">
